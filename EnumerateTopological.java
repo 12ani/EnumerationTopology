@@ -11,9 +11,6 @@ import rbk.Graph.Timer;
 import rbk.Graph.Vertex;
 import rbk.Graph.Edge;
 import rbk.Graph.Factory;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -22,8 +19,6 @@ public class EnumerateTopological extends GraphAlgorithm<EnumerateTopological.En
 	boolean print; // Set to true to print array in visit
 	long count; // Number of permutations or combinations visited
 	Selector sel;
-	private static List<Graph.Vertex> finishList;
-	EnumerateTopological indegree;
 
 	public EnumerateTopological(Graph g) {
 		super(g, new EnumVertex());
@@ -118,7 +113,7 @@ public class EnumerateTopological extends GraphAlgorithm<EnumerateTopological.En
 			VERBOSE = Integer.parseInt(args[0]);
 		}*/
 		
-		File file = new File("/Users/Shivani/eclipse-workspace/LP4/sxm180018/input/permute-dag-50-800.txt");
+		File file = new File("/Users/Shivani/eclipse-workspace/LP4/sxm180018/input/permute-dag-08b.txt");
         in = new Scanner(file);
 		Graph g = Graph.readDirectedGraph(in);
 		Graph.Timer t = new Graph.Timer();
