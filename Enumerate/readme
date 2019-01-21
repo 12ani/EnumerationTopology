@@ -1,0 +1,44 @@
+Readme
+ 
+/* Long Project LP4: PERT, Enumeration of topological orders
+* @author
+*   Sivagurunathan Velayutham sxv176330
+*   Sai Spandan Gogineni sxg175130
+*   Shivani Mankhotia sxm180018
+*   Maitreyee Mhasakar mam171630
+*/ 
+  
+To Run Enumeration, Enumeration of Topological Order and PERT Codes:
+              Compile source code using JAVA IDE
+    a. create a simple java project in your favorite IDE(Eclipse, Netbeans, IntellijIDEA)
+    b. copy the netid package folder inside the src folder
+    c. build the project using the given functionality provided in your IDE
+    d.(1). execute the main method in Enumerate.java OR EnumerateTopological.java file.
+    d.(2). To Run Pert.java: execute the main method in LP4Driver.java file.             
+ 
+              Run via Command line :
+              a. Unzip sxm180018
+              b. Go to parent folder of unzipped sxm180018
+              c.(1). Compile : javac sxm180018/Enumerate.java OR javac sxm180018/EnumerateTopological.java
+              c.(2). For PERT.java - Complile : javac sxm180018/LP4Driver.java
+              d.(1). Run : java sxm180018.Enumerate OR java sxm180018.EnumerateTopological
+              d.(2). For PERT: Run java sxm180018.LP4Driver
+             
+ 
+Graph.java, DFS.java,LP4Driver.java and Timer.java should be placed in same package as PERT.java
+ 
+EnumerateTopological.java:
+              - EnumerateTopological.java calls permute() method of Enumerate.java
+              - Class Selector extends Approver class of Enumerate.java and overrides select, unselect and visit methods.
+              - a new method 'init()' is created to get indegree of each vertex.
+             
+PERT.java:
+	LP4Driver calls static pert() method from PERT.java.
+	In case of file as input, provide the path\filename [space] 1 in the command line 	or follow following steps in IDE
+		1. Build the project
+		2. Open Edit configurations
+		3. click + in left pane
+		4. select java application
+		5. Provide above input in program arguments box.
+		6. Click apply and ok.
+  
